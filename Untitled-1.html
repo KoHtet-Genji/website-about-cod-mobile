@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CODM Loadout Builder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>CODM Loadout Builder</h1>
+    <p class="subtitle">Create, save and share your Call of Duty: Mobile loadouts (client-side only).</p>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>Weapons</h2>
+      <div id="weapon-list" class="list"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Selected Loadout</h2>
+      <div id="loadout">
+        <p>Select a weapon to begin.</p>
+      </div>
+
+      <div class="controls">
+        <input id="loadout-name" placeholder="Loadout name" />
+        <button id="save-loadout">Save Loadout</button>
+        <button id="export-loadout">Export JSON</button>
+      </div>
+
+      <h3>Saved Loadouts</h3>
+      <div id="saved-list" class="list"></div>
+    </section>
+
+    <section class="panel tips">
+      <h2>Quick Tips</h2>
+      <ul>
+        <li>Combine mobility perks with SMGs for close-range playstyles.</li>
+        <li>Use extended mags on weapons used for sustained engagements.</li>
+        <li>This project is a community-friendly template — add your own weapons & data!</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>Made for players — not for cheats. © CODM Loadout Builder</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
